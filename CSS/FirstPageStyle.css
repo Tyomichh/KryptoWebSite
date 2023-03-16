@@ -3,7 +3,7 @@ body {
     /*font-family: 'Outfit', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: #333;
+    color: #fff;
     line-height: 1;
     background-color: #010922;
 }
@@ -18,13 +18,9 @@ h6 {
     margin: 0;
 }
 
-
-
-
-/*              Fist page                   */
-
-
-
+p {
+    margin: 0;
+}
 
 /* Container */
 
@@ -35,36 +31,51 @@ h6 {
     margin: 0 auto;
 }
 
+
+
+/*              Fist page                   */
+
+
+
 /* Header */
 
 .header {
-    width: 100;
-    padding-top: 30px;
-
-    position: absolute;
+    width: 100%;
+    padding-top: 50px;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
 }
 
-.header-iner {
+.header_iner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: #ffffff;
-    cursor: pointer;
+.header_logo {
+    display: inherit;
+    align-items: center;
 }
 
-.header-nav {
-    font-size: 12px;
-    font-weight: 400;
+.header_logo_text {
+    margin-left: 28px;
+    display: inline;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
     text-transform: uppercase;
+    /* cursor: pointer; */
+}
+
+.header_nav {
+    display: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+    text-align: left;
 }
 
 .nav_link {
@@ -82,8 +93,8 @@ h6 {
     display: block;
     opacity: 0;
     width: 100%;
-    height: 3px;
-    background-color: #fce38a;
+    height: 2px;
+    background-color: #ffffff;
     position: absolute;
     top: 120%;
     left: 0;
@@ -92,7 +103,7 @@ h6 {
 }
 
 .nav_link:hover {
-    color: #fce38a;
+    color: #ffffff;
 }
 
 .nav_link:hover:after,
@@ -101,5 +112,81 @@ h6 {
 }
 
 .nav_link.active {
-    color: #fce38a;
+    color: #ffffff;
+}
+
+/* FIrst block */
+/* discover_nfts block */
+
+.discover_nfts_block {
+    margin-top: 130px;
+}
+
+.discover_nfts {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.discover_nfts_item {
+    display: flex;
+}
+
+.discover_nfts_item_one {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.discover_nfts_item_two {
+    width: 45%;
+    align-items: flex-start;
+}
+
+.discover_nfts_title {
+    width: 435px;
+    padding-top: 130px;
+    margin-bottom: 45px;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+
+}
+
+.discover_nfts_text {
+    width: 270px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 45px;
+}
+
+.discover_nfts_button {
+
+}
+
+.discover_nfts_button {
+    width: 255px;
+    height: 72px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #8D8DDA;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background .2s linear;
+    border:none;
+}
+
+.discover_nfts_button:hover {
+
+    background: none;
+    outline-color: none ;
+    border: 2px solid #89D0D1;
+
 }
