@@ -23,7 +23,6 @@ p {
 }
 
 /* Container */
-
 .container {
     width: 100%;
     max-width: 1265px;
@@ -31,6 +30,59 @@ p {
     margin: 0 auto;
 }
 
+/* Font-styles */
+.main-title {
+    margin-bottom: 45px;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    text-transform: capitalize;
+    line-height: 100%;
+
+    color: #ffffff;
+}
+
+.subtitle_block {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.text_block {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 45px;
+}
+
+/* Buttons */
+.block_button {
+    background: #8D8DDA;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background .2s linear;
+    border: none;
+}
+
+.block_button:hover {
+    background: none;
+    outline-color: none;
+    border: 2px solid #89D0D1;
+}
+
+/* Page_block */
+
+.page_block {
+    margin-top: 130px;
+}
+
+.page_block_organizer {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /*              Fist page                   */
@@ -38,7 +90,6 @@ p {
 
 
 /* Header */
-
 .header {
     width: 100%;
     padding-top: 50px;
@@ -59,7 +110,7 @@ p {
     align-items: center;
 }
 
-.header_logo_text {
+.syteLogo_title {
     margin-left: 28px;
     display: inline;
     font-size: 24px;
@@ -118,75 +169,78 @@ p {
 /* FIrst block */
 /* discover_nfts block */
 
-.discover_nfts_block {
-    margin-top: 130px;
-}
-
-.discover_nfts {
+.discover_nfts_item_text {
     display: flex;
-    flex-wrap: wrap;
-    height: 600px;
-}
-
-.discover_nfts_item {
-    display: flex;
-}
-
-.discover_nfts_item_one {
     width: 55%;
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
-.discover_nfts_item_two {
+.discover_nfts_item_photo {
+    display: flex;
     width: 45%;
     align-items: flex-start;
+    justify-content: flex-end;
 }
 
 .discover_nfts_title {
     width: 435px;
-    padding-top: 130px;
-    margin-bottom: 45px;
+    padding-top: 70px;
     font-size: 80px;
-    font-weight: 700;
-    font-family: 'Outfit', sans-serif;
-    color: #ffffff;
-    text-transform: capitalize;
-
 }
 
 .discover_nfts_text {
-    width: 270px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    color: #ffffff;
-    margin-bottom: 45px;
-}
-
-.discover_nfts_button {
-
+    width: 550px;
 }
 
 .discover_nfts_button {
     width: 255px;
     height: 72px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #ffffff;
-    text-transform: uppercase;
-    background: #8D8DDA;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: background .2s linear;
-    border:none;
 }
 
-.discover_nfts_button:hover {
 
-    background: none;
-    outline-color: none ;
-    border: 2px solid #89D0D1;
 
+/*              Second page                   */
+
+
+
+/* Line Company Logos */
+.logos_block {
+    margin-top: 275px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: #221F4C;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+/* Second Page block */
+.analytics_photo_item {
+    display: flex;
+    width: 55%;
+    justify-content: flex-start;
+}
+
+.analytics_text_item {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.block_button_reg {
+    display: flex;
+    justify-content: space-around;
+}
+
+.analytics_button {
+    width: 345px;
+    height: 74px;
 }
