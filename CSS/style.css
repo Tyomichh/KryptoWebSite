@@ -74,7 +74,6 @@ p {
 }
 
 /* Page_block */
-
 .page_block {
     margin-top: 130px;
 }
@@ -82,6 +81,11 @@ p {
 .page_block_organizer {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Section */
+.section_page_block {
+    margin-bottom: 245px;
 }
 
 
@@ -223,7 +227,7 @@ p {
 .analytics_photo_item {
     display: flex;
     width: 55%;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .analytics_text_item {
@@ -233,8 +237,6 @@ p {
     justify-content: center;
 }
 
-
-
 .block_button_reg {
     display: flex;
     justify-content: space-around;
@@ -243,4 +245,35 @@ p {
 .analytics_button {
     width: 345px;
     height: 74px;
+}
+
+
+
+/*              Third page                   */
+
+
+
+/* Get our app */
+.get_our_up_text_item {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.get_our_up_photo_item {
+    display: flex;
+    width: 55%;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.get_our_up_button {
+    width: 345px;
+    height: 74px;
+}
+
+.button_link {
+    text-decoration: none;
+    color: #fff;
 }
