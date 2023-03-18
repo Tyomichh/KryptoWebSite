@@ -74,10 +74,6 @@ p {
 }
 
 /* Page_block */
-.page_block {
-    margin-top: 130px;
-}
-
 .page_block_organizer {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +81,7 @@ p {
 
 /* Section */
 .section_page_block {
-    margin-bottom: 245px;
+    margin-bottom: 260px;
 }
 
 
@@ -101,6 +97,7 @@ p {
     left: 0;
     right: 0;
     z-index: 1000;
+    margin-bottom: 160px;
 }
 
 .header_iner {
@@ -210,7 +207,8 @@ p {
 
 /* Line Company Logos */
 .logos_block {
-    margin-top: 275px;
+    margin-top: 250px;
+    margin-bottom: 160px;
 }
 
 .logos {
@@ -258,7 +256,7 @@ p {
     display: flex;
     width: 45%;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .get_our_up_photo_item {
@@ -277,3 +275,30 @@ p {
     text-decoration: none;
     color: #fff;
 }
+
+/* 24/7 Access */
+.Access_text_item {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Access_photo_item {
+    display: flex;
+    width: 52%;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.Access_button {
+    width: 345px;
+    height: 74px;
+}
+
+
+
+/*              Fourght page                   */
+
+
+
