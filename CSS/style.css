@@ -301,5 +301,57 @@ p {
 
 /*              Fourght page                   */
 
+.testimonials_block {
+    display: block;
+}
 
+.testimonials_title_block {
+    text-align: center;
+    margin-bottom: 65px;
+}
 
+.testimonials_sub {
+    color: #AAD9D9;
+}
+
+.testimonials_title {
+    margin: 0 auto;
+    height: 120px;
+    max-width: 525px;
+}
+
+.testemonials_block {
+    display: flex;
+    justify-content: center
+}
+
+.Testemonial {
+    margin: 51px 7px 0;
+    position: relative;
+}
+
+.testemonial_img {
+    position: absolute;
+    top: -51px;
+    left: 114px;
+    border-radius: 50%;
+}
+
+.testemonial_square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 345px;
+    height: 245px;
+    background: #221F52;
+    border-radius: 20px;
+}
+
+.usertext {
+    text-align: center;
+    width: 298px;
+    margin: 0;
+    margin-top: 10px;
+}
