@@ -77,6 +77,7 @@ p {
 .page_block_organizer {
     display: flex;
     flex-wrap: wrap;
+    max-height: 500px;
 }
 
 /* Section */
@@ -221,7 +222,7 @@ p {
     opacity: 80%;
 }
 
-/* Second Page block */
+/* Amalytics */
 .analytics_photo_item {
     display: flex;
     width: 55%;
