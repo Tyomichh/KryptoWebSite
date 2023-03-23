@@ -16,12 +16,12 @@
 </head>
 
 <body>
-
-    <span class="purple_circle"></span>
-    <span class="green_circle"></span>
+    
+        <div class="purple_circle"></div>
+        <div class="green_circle"></div>
 
     <!-- First page -->
-    <header class="header">
+    <header class="header" id="home">
 
         <div class="container">
 
@@ -52,7 +52,7 @@
 
     </header>
 
-    <div class="page_block">
+    <div class="page_block" id="NFTs">
 
         <div class="container">
 
@@ -89,11 +89,11 @@
     </div>
 
     <!-- Second page -->
-    <section class="section_page_block">
+    <section class="section_page_block" id="pricing"> <!-- Analytics -->
 
         <div class="container">
 
-            <div class="logos_block">
+            <div class="logos_block" id="about">
 
                 <h3 class="subtitle_block">Featured on</h3>
 
@@ -144,11 +144,11 @@
     </section>
 
     <!-- Third page -->
-    <section class="section_page_block"> <!-- Get our app section -->
+    <section class="section_page_block" id="download"> <!-- Get our app section -->
 
         <div class="container">
 
-                <div class="page_block_organizer">
+                <div class="page_block_organizer" id="browse">
 
                     <div class="get_our_up_text_item">
 
@@ -167,7 +167,7 @@
 
                         <div class="block_button_reg">
                         
-                            <button class="block_button get_our_up_button subtitle_block" type="submit"><a href="" class="button_link">download on ios</a></button>
+                            <button class="block_button get_our_up_button subtitle_block" type="submit"><a href="https://apps.apple.com/us/app/apple-store/id375380948" class="button_link">download on ios</a></button>
                             
                         </div>
 
@@ -183,7 +183,7 @@
 
     </section>
 
-    <section class="section_page_block"> <!-- 24/7 Access section -->
+    <section class="section_page_block" id="sellNFTs"> <!-- 24/7 Access section -->
 
         <div class="container">
 
@@ -223,7 +223,7 @@
     </section>
 
     <!-- Fourght page -->
-    <section class="section_page_block"> <!-- Testimonials -->
+    <section class="section_page_block" id="reviwes"> <!-- Testimonials -->
 
         <div class="container">
 
@@ -238,7 +238,7 @@
 
                     <div class="testemonials_block">
 
-                        <div class="Testemonial">
+                        <div class="Testemonial testemonial_sk">
                             
                             <img class="testemonial_img" src="image/People/OliviaCole.jpg" alt="">
 
@@ -256,7 +256,7 @@
 
                         </div>
 
-                        <div class="Testemonial">
+                        <div class="Testemonial testemonial_sk">
 
                             <img class="testemonial_img" src="image/People/JessicaPage.png" alt="">
 
@@ -274,7 +274,7 @@
 
                         </div>
 
-                        <div class="Testemonial">
+                        <div class="Testemonial testemonial_sk">
 
                             <img class="testemonial_img" src="image/People/EvanWhite.jpg" alt="">
 
@@ -339,26 +339,25 @@
 
                 <div class="footer_column">
                     <h4 class="footer_column_title">Krypto</h4>
-                    <a class="footer_href text_block" href="#">Home</a>
-                    <a class="footer_href text_block" href="#">About</a>
-                    <a class="footer_href text_block" href="#">Buy NFTs</a>
-                    <a class="footer_href text_block" href="#">Sell NFTs</a>
+                    <a class="footer_href text_block" href="#" data-scroll="#home">Home</a>
+                    <a class="footer_href text_block" href="#" data-scroll="#about">About</a>
+                    <a class="footer_href text_block" href="#" data-scroll="#download">Download app</a>
                 </div>
 
                 <div class="footer_column">
                     <h4 class="footer_column_title">Market</h4>
-                    <a class="footer_href text_block" href="#">Browse NFTs</a>
-                    <a class="footer_href text_block" href="#">Buy NFTs</a>
-                    <a class="footer_href text_block" href="#">Sell NFTs</a>
+                    <a class="footer_href text_block" href="#" data-scroll="#browse">Browse NFTs</a>
+                    <a class="footer_href text_block" href="#" data-scroll="#NFTs">Buy NFTs</a>
+                    <a class="footer_href text_block" href="#" data-scroll="#sellNFTs">Sell from anywhere</a>
 
                 </div>
 
-                <div class="footer_column">
-                    <h4 class="footer_column_title">Kontakt</h4>
-                    <a class="footer_href text_block" href="#">Email</a>
-                    <a class="footer_href text_block" href="#">LinkedIn</a>
-                    <a class="footer_href text_block" href="#">Instagram</a>
-                    <a class="footer_href text_block" href="#">Twitter</a>
+                <div class="footer_column" id="contact">
+                    <h4 class="footer_column_title">Contakt</h4>
+                    <a class="footer_href text_block" href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser">Email</a>
+                    <a class="footer_href text_block" href="https://www.linkedin.com">LinkedIn</a>
+                    <a class="footer_href text_block" href="https://www.instagram.com">Instagram</a>
+                    <a class="footer_href text_block" href="https://twitter.com/?lang=uk">Twitter</a>
                 </div>
 
                 <div class="footer_column email_column">
@@ -378,6 +377,9 @@
         <div class="footer_line"></div>
 
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="JS/app.js"></script>
 
 </body>
 </html>
