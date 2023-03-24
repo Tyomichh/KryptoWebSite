@@ -6,8 +6,6 @@ body {
     color: #fff;
     line-height: 1;
     background-color: #010922;
-    position: relative;
-    overflow-x: hidden;
 }
 
 
@@ -41,7 +39,7 @@ p {
     position: absolute;
     width: 679px;
     height: 679px;
-    left: 1500px;
+    left: 1600px;
     top: 306px;
     z-index: -1;
     background: rgba(170, 217, 217, 0.7);
@@ -64,7 +62,6 @@ p {
     font-family: 'Outfit', sans-serif;
     text-transform: capitalize;
     line-height: 100%;
-
     color: #ffffff;
 }
 
@@ -100,10 +97,15 @@ p {
 }
 
 /* Page_block */
+.page {
+    position: relative;
+    overflow-x: hidden;
+}
+
 .page_block_organizer {
     display: flex;
     flex-wrap: wrap;
-    max-height: 500px;
+    max-height: 540px;
 }
 
 /* Section */
@@ -112,7 +114,7 @@ p {
 }
 
 
-/*              Fist page                   */
+/*              Fist section                   */
 
 
 
@@ -194,7 +196,6 @@ p {
     color: #ffffff;
 }
 
-/* FIrst block */
 /* discover_nfts block */
 
 .discover_nfts_item_text {
@@ -228,13 +229,12 @@ p {
 
 
 
-/*              Second page                   */
+/*              Second section                   */
 
 
 
 /* Line Company Logos */
 .logos_block {
-    margin-top: 250px;
     margin-bottom: 160px;
 }
 
@@ -274,7 +274,7 @@ p {
 
 
 
-/*              Third page                   */
+/*              Third section                   */
 
 
 
@@ -296,11 +296,6 @@ p {
 .get_our_up_button {
     width: 345px;
     height: 74px;
-}
-
-.button_link {
-    text-decoration: none;
-    color: #fff;
 }
 
 /* 24/7 Access */
@@ -325,7 +320,7 @@ p {
 
 
 
-/*              Fourght page                   */
+/*              Fourght section                   */
 
 
 
@@ -395,7 +390,7 @@ p {
 
 
 
-/*              Fifth page                   */
+/*              Fifth section                   */
 
 
 
@@ -415,7 +410,7 @@ p {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg,  #9A80D7 20%, #89D0D1 80%);
+    background: linear-gradient(135deg, #9A80D7 20%, #89D0D1 80%);
     background-size: 250% 250%;
     animation: cardGrad 6s infinite;
 }
@@ -602,4 +597,125 @@ p {
     100% {
         background-position: 0 50%;
     }
+}
+
+
+
+/*              Second page               */
+
+.main-title-bold {
+    padding-top: 12px;
+    margin-bottom: 45px;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    text-transform: capitalize;
+    line-height: 100%;
+    color: #000;
+}
+
+.subtitle_bold {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.text_standart {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000;
+}
+
+.pro_text_styles{
+    color: #fff;
+}
+
+/* Our pricing */
+.pricing_title {
+    font-size: 80px;
+    text-align: center;
+}
+
+.pricing_colmns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.pricing_colmn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 345px;
+    height: 580px;
+    background-color: #ffffff;
+    border-radius: 45px;
+    transition: transform .2s linear;
+}
+
+.pricing_colmn:hover {
+    transform: scale(1.08);
+}
+
+.pro_colmn {
+    height: 680px;
+    background-color: #221F4D;
+}
+
+.most_popular_item {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8D8DDA;
+    border-radius: 45px 45px 0 0;
+}
+
+.pricing_title_text {
+    margin: 40px 0 0;
+    text-align: center;
+}
+
+.list_block {
+    display: flex;
+    align-items: center;
+    max-width: 230px;
+    height: 240px;
+}
+
+.list_style {
+    margin: 15px 0 0;
+    list-style-image: url(../image/VectorQ.svg);
+}
+
+.list_style li {
+    padding: 5px 0;
+}
+
+.buy_button,
+.buy_button_pro {
+    position: absolute;
+    bottom: 40px;
+    width: 165px;
+    height: 62px;
+    border-radius: 20px;
+}
+
+.buy_button:hover {
+    background: none;
+    outline-color: none;
+    border: 3px solid #000;
+    color: #000;
+}
+
+.buy_button_pro:hover {
+    background: none;
+    outline-color: none;
+    border: 2px solid #89D0D1;
 }
