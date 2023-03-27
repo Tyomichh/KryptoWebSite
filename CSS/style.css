@@ -740,6 +740,189 @@ p {
     border: 2px solid #89D0D1;
 }
 
+/* Payment_form */
+.backgroundImg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../image/Screenshot_2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+
+.payment_form {
+    position: absolute;
+    top: 300px;
+    left: 790px;
+    z-index: 1;
+    max-width: 234px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 25px;
+    animation: animationes .6s ease-in;
+}
+
+.checkout_method {
+    max-width: 234px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.payment_button {
+    height: 35px;
+    background: #8D8DDA;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.5s;
+}
+
+.payment_button:is(:hover, :focus) {
+    background: none;
+    border: 2px solid #242424;
+    color:#242424;
+    padding: 3px;
+}
+
+.payment_button i {
+    font-size: 24px;
+}
+
+.button--inactive {
+    background-color: #f2f2f2;
+    color: #242424;
+}
+
+.checkout_information,
+.input_group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input_group {
+    gap: 5px;
+}
+
+.input_group label{
+    font-size: 14px;
+    color: #242424;
+    font-weight: bold;
+}
+
+.input_group input{
+    display: flex;
+    max-width: 200px;
+    width:100%;
+    padding: 0 15px;
+    border-radius: 20px;
+    border: 2px solid #242424;
+    background-color: #efefff;
+    outline: none;
+    line-height: 30px;
+}
+
+.input_group input:focus {
+    background-color: transparent;
+}
+
+.date_group {
+    max-width: 100px;
+}
+
+.CVV_group {
+    max-width: 60px;
+}
+
+.horizontal_grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 15px;
+}
+
+.button--checkout {
+    max-height: 46px;
+    height: 100%;
+    border-radius: 40px;
+    max-width: 234px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.button--checkout:hover {
+    padding: 13px 0;
+}
+
+.payment_left_decoration,
+.payment_right_decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #8D8DDA;
+    border-radius: 20px;
+}
+
+.payment_left_decoration {
+    bottom: 60px;
+    left: -30px;
+}
+
+.payment_right_decoration {
+    top: 60px;
+    right: -30px;
+}
+
+.payment_left_decoration:before,
+.payment_left_decoration:after,
+.payment_right_decoration:before,
+.payment_right_decoration:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.payment_left_decoration:before {
+    top: -20px;
+}
+
+.payment_left_decoration:after {
+    top: 20px;
+    left: 10px;
+}
+
+.payment_right_decoration:before {
+    top: -20px;
+    right: 0;
+}
+
+.payment_right_decoration:after {
+    top: 20px;
+    right: 10px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
 
 
 
@@ -763,8 +946,8 @@ p {
 
 
 
-form {
-    animation: animationes 1s ease-in;
+.decor {
+    animation: animationes .8s ease-in;
 }
 
 @keyframes animationes {
@@ -781,14 +964,14 @@ form {
 
 .decor {
     position: relative;
-    max-width: 400px;
+    max-width: 360px;
     margin: 200px auto;
     background: #fff;
     border-radius: 30px;
 }
 
-.form-left-decoration,
-.form-right-decoration {
+.form_left_decoration,
+.form_right_decoration {
     content: "";
     position: absolute;
     width: 50px;
@@ -797,20 +980,20 @@ form {
     border-radius: 20px;
 }
 
-.form-left-decoration {
+.form_left_decoration {
     bottom: 60px;
     left: -30px;
 }
 
-.form-right-decoration {
+.form_right_decoration {
     top: 60px;
     right: -30px;
 }
 
-.form-left-decoration:before,
-.form-left-decoration:after,
-.form-right-decoration:before,
-.form-right-decoration:after {
+.form_left_decoration:before,
+.form_left_decoration:after,
+.form_right_decoration:before,
+.form_right_decoration:after {
     content: "";
     position: absolute;
     width: 50px;
@@ -819,21 +1002,21 @@ form {
     background: #fff;
 }
 
-.form-left-decoration:before {
+.form_left_decoration:before {
     top: -20px;
 }
 
-.form-left-decoration:after {
+.form_left_decoration:after {
     top: 20px;
     left: 10px;
 }
 
-.form-right-decoration:before {
+.form_right_decoration:before {
     top: -20px;
     right: 0;
 }
 
-.form-right-decoration:after {
+.form_right_decoration:after {
     top: 20px;
     right: 10px;
 }
@@ -848,7 +1031,7 @@ form {
     background: #fff;
 }
 
-.form-inner {
+.form_inner {
     padding: 50px;
 }
 
@@ -856,29 +1039,30 @@ form {
     margin-top: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: #575a5e;
+    color: #242424;
 }
 
 .input_block {
     margin-bottom: 10px;
 }
 
-.form-inner label:first-child {
+.form_inner label:first-child {
     margin: 10px 0;
 }
 
-.form-inner label {
+.form_inner label {
     padding-left: 20px;
 }
 
-.form-inner input {
+.form_inner input {
     display: block;
+    max-width: 260px;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 15px;
     box-sizing: border-box;
-    background: #e2e2ff;
-    line-height: 40px;
-    border-width: 0;
+    border: 2px solid #242424;
+    background: #efefff;
+    line-height: 30px;
     border-radius: 20px;
 }
 
@@ -887,7 +1071,7 @@ form {
     justify-content: center
 }
 
-.form-inner div button {
+.form_inner div button {
     width: 150px;
     height: 40px;
     border-radius: 40px;
@@ -901,17 +1085,13 @@ form {
     transition: background .2s linear;
 }
 
-.form-inner button:hover {
+.form_inner button:hover {
     background: none;
-    border: 2px solid #000;
-    color: #000;
+    border: 2px solid #242424;
+    color: #242424;
 }
 
-.form-inner textarea {
-    resize: none;
-}
-
-.form-inner h3 {
+.form_inner h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
