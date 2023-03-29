@@ -1,4 +1,5 @@
 body {
+    padding: 0;
     margin: 0;
     /*font-family: 'Outfit', sans-serif;*/
     font-family: 'Roboto', sans-serif;
@@ -26,22 +27,26 @@ p {
 
 .purple_circle {
     position: absolute;
-    width: 679px;
-    height: 679px;
-    left: 220px;
-    top: -410px;
+    max-width: 677px;
+    width: 100%;
+    height: 677px;
+    left: 15%;
+    top: -26%;
     z-index: -1;
+    border-radius: 50%;
     background: rgba(128, 128, 215, 0.7);
     filter: blur(127px);
 }
 
 .green_circle {
     position: absolute;
-    width: 679px;
-    height: 679px;
-    left: 1600px;
-    top: 306px;
+    max-width: 677px;
+    width: 100%;
+    height: 677px;
+    left: 85%;
+    top: 45%;
     z-index: -1;
+    border-radius: 50%;
     background: rgba(170, 217, 217, 0.7);
     filter: blur(127px);
 }
@@ -98,8 +103,10 @@ p {
 
 /* Page_block */
 .page {
+    width: 100%;
+    height: 1400px;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .page_block_organizer {
@@ -663,6 +670,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    max-width: 1265px;
+    width: 100%;
     gap: 20px;
 }
 
@@ -740,7 +749,14 @@ p {
     border: 2px solid #89D0D1;
 }
 
-/* Payment_form */
+
+
+
+/*                  Payment_form                    */
+
+
+
+
 .backgroundImg {
     position: relative;
     width: 100%;
@@ -748,22 +764,24 @@ p {
     background: url(../image/Screenshot_2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(10px);
+    filter: blur(85px);
 }
 
 .payment_form {
     position: absolute;
-    top: 300px;
-    left: 790px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
     max-width: 234px;
     width: 100%;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 25px;
+    padding: 50px;
+    margin: 250px auto;
     animation: animationes .6s ease-in;
 }
 
@@ -823,7 +841,7 @@ p {
     max-width: 200px;
     width:100%;
     padding: 0 15px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 2px solid #242424;
     background-color: #efefff;
     outline: none;
@@ -933,7 +951,7 @@ p {
 
 
 
-/*              Form page               */
+/*              RegForm page               */
 
 
 
@@ -946,7 +964,7 @@ p {
 
 
 
-.decor {
+.reg_form {
     animation: animationes .8s ease-in;
 }
 
@@ -962,9 +980,10 @@ p {
     }
 }
 
-.decor {
+.reg_form {
     position: relative;
     max-width: 360px;
+    width: 100%;
     margin: 200px auto;
     background: #fff;
     border-radius: 30px;
@@ -1046,10 +1065,6 @@ p {
     margin-bottom: 10px;
 }
 
-.form_inner label:first-child {
-    margin: 10px 0;
-}
-
 .form_inner label {
     padding-left: 20px;
 }
@@ -1064,6 +1079,7 @@ p {
     background: #efefff;
     line-height: 30px;
     border-radius: 20px;
+    margin: 5px
 }
 
 .reg_form_button_block {
@@ -1094,4 +1110,348 @@ p {
 .form_inner h3 {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+
+
+
+/*                      MEDIA SCREEN                         */
+
+
+
+
+@media (max-width: 1280px) {
+
+    /* Circles */
+    .purple_circle {
+        left: 10%;
+        top: -30%;
+    }
+
+    .green_circle {
+        left: 85%;
+        top: 35%;
+    }
+
+    /* Container */
+    .container {
+        width: 97%;
+    }
+
+    /* RegForm page */
+    .header {
+        width: 98%;
+    }
+
+}
+
+@media (max-width: 990px) {
+
+    /* Circles */
+    .purple_circle {
+        top: -10%;
+        left: 0%;
+        width: 500px;
+        height: 500px;
+    }
+
+    .green_circle {
+        left: 75%; 
+        width: 500px;
+        height: 500px; 
+    }
+
+    /* Container */
+    .container {
+        width: 93%;
+    }
+
+    /* Section */
+    .section_page_block {
+        margin-bottom: 200px;
+    }
+
+    /* Font-styles */
+    .pricing_title {
+        font-size: 40px;
+        text-align: center;
+    }   
+
+    /* Footer */
+    .footer {
+        margin-top: 200px;
+    }
+
+    .footer_syteLogo {
+        float: none;
+        padding-right: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_columns {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .footer_line {
+        margin-top: 60px;
+    }
+
+    /* Our pricing */
+    .pricing_colmns {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        gap: 40px;
+    }
+
+
+}
+
+@media (max-width: 780px) {
+
+    /* Circles */
+    .purple_circle {
+        left: 0%;
+        width: 75%;
+    }
+
+    .green_circle {
+        left: 65%;    
+    }
+
+    /* Font-styles */
+    .syteLogo_title {
+        font-size: 20px;
+        /* cursor: pointer; */
+    }
+
+    /* Header */
+    .header_nav {
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .footer_column {
+        padding-bottom: 10px;
+        padding-right: 15px;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+     /* Circles */
+     .purple_circle {
+        left: 0%;
+        width: 75%;
+    }
+
+    .green_circle {
+        left: 65%;
+    }
+
+    /* Section */
+    .section_page_block {
+        margin-bottom: 126px;
+    }
+
+    /* Font-styles */
+    .main-title {
+        font-size: 36px;
+    }
+
+    .subtitle_block {
+        font-size: 14px;
+    }
+
+    .text_block {
+        font-size: 12px;
+    }
+
+    /* Сontainer */
+    .container {
+        width: 92%;
+    }
+
+    /* header */
+    .header {
+        padding-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    /* Second page */
+    .main-title-bold {
+        padding-top: 12px;
+        margin-bottom: 5px;
+        font-size: 46px;
+    }
+
+    .subtitle_bold {
+        font-size: 14px;
+    }
+
+    .text_standart {
+        font-size: 14px;
+    }
+
+    .pricing_colmn {
+        width: 270px;
+        height: 460px;
+    }
+
+    .pro_colmn {
+        height: 530px;
+    }
+
+    .most_popular_item {
+        height: 62px;
+    }
+
+    .pricing_title_text {
+        margin: 20px 0 0;
+    }
+
+    .list_block {
+        height: 220px;
+    }
+
+    .buy_button, .buy_button_pro {
+        width: 125px;
+        height: 50px;
+    }
+
+    /* Payment_form */
+    .payment_form {
+        gap: 35px;
+        padding: 40px;
+        margin: 250px auto;
+    }
+
+    /* RegForm page */
+    .reg_form {
+        max-width: 315px;
+        margin: 130px auto;
+    }
+
+    .circle {
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    /* header */
+    .header {
+        padding-top: 35px;
+        margin-bottom: 80px;
+    }
+
+    /* Payment_form */
+    .payment_form {
+        gap: 30px;
+        padding: 30px;
+        margin: 200px auto;
+    }
+
+    /* RegForm page */
+    .reg_form {
+        max-width: 280px;
+        margin: 100px auto;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 130px;
+    }
+
+    .footer_line {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    /* Сontainer */
+    .container {
+        width: 87%;
+    }
+
+    /* header */
+    .header {
+        margin-bottom: 60px;
+    }
+
+    .backTo_pricing {
+        display: none;
+    }
+
+    /* Payment_form */
+    .payment_form {
+        gap: 5px;
+        padding: 15px;
+        margin: 180px auto;
+    }
+
+    .payment_left_decoration,
+    .payment_right_decoration {
+        display: none;
+    }
+
+    /* RegForm page */
+    .reg_form {
+        max-width: 230px;
+        margin: 75px auto;
+    }
+
+    .form_inner {
+        padding: 25px;
+    }
+
+    .form_right_decoration {
+        display: none;
+    }
+
+    .form_left_decoration {
+        display: none;
+    }
+
+    /* Footer */
+    .footer_columns {
+        justify-content: space-between;
+    }
+
+    .subscribe-input {
+        padding-right: 60px;
+    }
+
+    .subscribe-btn {
+        padding: 14px 8px;
+    }
+
+}
+
+@media (max-height: 600px) {
+
+    /* header */
+    .header {
+        margin-bottom: 60px;
+    }
+
+    /* Payment_form */
+    .payment_form {
+        margin: 130px auto;
+    }
+
+
+    /* RegForm page */
+    .reg_form {
+        margin: 60px auto;
+    }
 }

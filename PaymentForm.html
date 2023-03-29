@@ -17,6 +17,7 @@
     <style>
         html,body {
            height: 100%;
+           width: 100%;
            overflow: hidden;
         }
     </style>
@@ -25,85 +26,87 @@
 
 <body>
 
-    <div class="backgroundImg"></div>
+    <div class="page">
+        <div class="backgroundImg"></div>
 
-    <header class="header" style="position: absolute; top: 0;">
+        <header class="header" style="position: absolute; top: 0;">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="header_iner">
+                <div class="header_iner">
 
-                <div class="header_logo">
+                    <div class="header_logo">
 
-                    <img src="image/Logos/SyteLogo.png" alt="SyteLogo">
+                        <img src="image/Logos/SyteLogo.png" alt="SyteLogo">
 
-                    <div class="syteLogo_title">
-                        Krypto
+                        <div class="syteLogo_title">
+                            Krypto
+                        </div>
+
                     </div>
 
-                </div>
+                    <nav class="header_nav" id="nav">
 
-                <nav class="header_nav" id="nav">
-
-                    <a class="nav_link backTo_main" href="price.html" >Back to pricing</a>
-                    <a class="nav_link backTo_main" href="index.html" >Back to main</a>
-                    
-                </nav>
-
-            </div>
-
-        </div>
-
-    </header>
-
-    <form class="payment_form">
-
-        <div class="payment_left_decoration"></div>
-
-        <div class="payment_right_decoration"></div>
-
-            <div class="checkout_method">
-
-                <button type="button" class="payment_button">
-                    <i class="icon-credit-card"></i>
-                </button>
-                <button type="button" class="payment_button button--inactive">
-                    <i class="icon-paypal"></i>
-                </button>
-
-            </div>
-
-            <div class="checkout_information">
-
-                <div class="input_group">
-                    <label for="name">Name on card</label>
-                    <input type="text" id="name" placeholder="Enter name">
-                </div>
-
-                <div class="input_group">
-                    <label for="number">Card number</label>
-                    <input type="text" id="number" placeholder="...">
-                </div>
-
-                <div class="horizontal_grid">
-
-                    <div class="input_group date_group">
-                        <label for="date">Expiration date</label>
-                        <input type="text" id="date" placeholder="12/27">
-                    </div>
-
-                    <div class="input_group CVV_group">
-                        <label for="cvv">CVV</label>
-                        <input type="number" id="cvv" placeholder="CVV">
-                    </div>
+                        <a class="nav_link backTo_pricing" href="price.html" >Back to pricing</a>
+                        <a class="nav_link backTo_main" href="index.html" >Back to main</a>
+                        
+                    </nav>
 
                 </div>
 
             </div>
 
-            <button class="payment_button button--checkout">Checkout</button>
+        </header>
 
-    </form>
+        <form class="payment_form">
+            
+            <div class="payment_left_decoration"></div>
+
+            <div class="payment_right_decoration"></div>
+
+                <div class="checkout_method">
+
+                    <button type="button" class="payment_button">
+                        <i class="icon-credit-card"></i>
+                    </button>
+                    <button type="button" class="payment_button button--inactive">
+                        <i class="icon-paypal"></i>
+                    </button>
+
+                </div>
+
+                <div class="checkout_information">
+
+                    <div class="input_group">
+                        <label for="name">Name on card</label>
+                        <input type="text" id="name" placeholder="Enter name">
+                    </div>
+
+                    <div class="input_group">
+                        <label for="number">Card number</label>
+                        <input type="text" id="number" placeholder="...">
+                    </div>
+
+                    <div class="horizontal_grid">
+
+                        <div class="input_group date_group">
+                            <label for="date">Expiration date</label>
+                            <input type="text" id="date" placeholder="12/27">
+                        </div>
+
+                        <div class="input_group CVV_group">
+                            <label for="cvv">CVV</label>
+                            <input type="number" id="cvv" placeholder="CVV">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="payment_button button--checkout">Checkout</button>
+
+        </form>
+    </div>
 
 </body>
 

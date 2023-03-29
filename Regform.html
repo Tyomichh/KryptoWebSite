@@ -16,6 +16,7 @@
 
     <style>
         body {
+            height: 100%;
             overflow: hidden;
         }
     </style>
@@ -23,79 +24,82 @@
 </head>
 
 <body>
+        <div class="page">
 
-        <span class="purple_circle"></span>
+            <span class="purple_circle"></span>
 
-        <span class="green_circle"></span>
+            <span class="green_circle"></span>
 
-        <header class="header" id="home">
+            <header class="header" id="home">
 
-            <div class="container">
-
-                <div class="header_iner">
-
-                    <div class="header_logo">
-
-                        <img src="image/Logos/SyteLogo.png" alt="SyteLogo">
-
-                        <div class="syteLogo_title">
-                            Krypto
+                <div class="container">
+    
+                    <div class="header_iner">
+    
+                        <div class="header_logo">
+    
+                            <img src="image/Logos/SyteLogo.png" alt="SyteLogo">
+    
+                            <div class="syteLogo_title">
+                                Krypto
+                            </div>
+    
                         </div>
-
+    
+                        <nav class="header_nav" id="nav">
+    
+                            <a class="nav_link" href="index.html" >Back to main</a>
+                            
+                        </nav>
+    
                     </div>
-
-                    <nav class="header_nav" id="nav">
-
-                        <a class="nav_link" href="index.html" >Back to main</a>
+    
+                </div>
+    
+            </header>
+    
+            <form class="reg_form" action="#" autocomplete="off" method='post' enctype="multipart/form-data">
+    
+                <div class="form_left_decoration"></div>
+    
+                <div class="form_right_decoration"></div>
+    
+                <div class="circle"></div>
+    
+                <div class="form_inner">
+    
+                    <div class="form_inner_items">
+                        <h3 class="text_color">Fill out the form</h3>
+    
+                        <div class="input_block">
+                            <label for="username" class="text_color">Username</label>
+                            <input type="text" name="username" placeholder="Enter name">
+                        </div>
+                        <div class="input_block">
+                            <label for="useremail" class="text_color">Email</label>
+                            <input type="email" name="useremail" placeholder="sumonumira@gmail.com">
+                        </div>
                         
-                    </nav>
-
+                        <div class="input_block">
+                            <label for="userpass" class="text_color">Password</label>
+                            <input type="password" name="userpass" placeholder="...">
+                        </div>
+    
+                        <div class="input_block">
+                            <label for="confirmuserpass" class="text_color">Confirm assword</label>
+                            <input type="password" name="confirmuserpass" placeholder="...">
+                        </div>
+    
+                        <div class="reg_form_button_block">
+                            <button type="submit">Send</button>
+                        </div>
+                    </div>
+    
                 </div>
+    
+            </form>
 
-            </div>
-
-        </header>
-
-        <form class="decor" action="#" autocomplete="off" method='post' enctype="multipart/form-data">
-
-            <div class="form_left_decoration"></div>
-
-            <div class="form_right_decoration"></div>
-
-            <div class="circle"></div>
-
-            <div class="form_inner">
-
-                <div class="form_inner_items">
-                    <h3 class="text_color">Fill out the form</h3>
-
-                    <div class="input_block">
-                        <label for="username" class="text_color">Username</label>
-                        <input type="text" name="username" placeholder="Enter name">
-                    </div>
-                    <div class="input_block">
-                        <label for="useremail" class="text_color">Email</label>
-                        <input type="email" name="useremail" placeholder="sumonumira@gmail.com">
-                    </div>
-                    
-                    <div class="input_block">
-                        <label for="userpass" class="text_color">Password</label>
-                        <input type="password" name="userpass" placeholder="...">
-                    </div>
-
-                    <div class="input_block">
-                        <label for="confirmuserpass" class="text_color">Confirm assword</label>
-                        <input type="password" name="confirmuserpass" placeholder="...">
-                    </div>
-
-                    <div class="reg_form_button_block">
-                        <button type="submit">Send</button>
-                    </div>
-                </div>
-
-            </div>
-
-        </form>
+        </div>
 
 </body>
 
