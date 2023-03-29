@@ -12,13 +12,3 @@ $("[data-scroll]").on("click", function (event) {
         scrollTop: blockOffset
     }, 500);
 });
-
-
-// /*Mneu nav toggle*/
-// $("#nav_toggle").on("click", function (event) {
-//     event.preventDefault();
-
-//     $(this).toggleClass("active");
-//     $("#nav").toggleClass("active");
-
-// });

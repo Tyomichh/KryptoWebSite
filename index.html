@@ -17,6 +17,7 @@
     <style>
         .page {
             height: auto;
+            overflow: hidden;
         }
 
         .purple_circle {
@@ -26,6 +27,246 @@
 
         .green_circle {
             top: 7%;
+        }
+
+        @media (max-width: 1280px) {
+
+            /* Container */
+            .container {
+                width: 94%;
+            }
+            
+            /*Section*/
+            .section_page_block {
+                margin-bottom: 360px;
+            }
+
+            /* images */
+            .first_section_image {
+                width: 470px;
+                height: 470px;
+            }
+        }
+
+        @media (max-width: 990px) {
+
+            /* images */
+            .section_image {
+                width: 350px;
+                height: 350px;
+            }
+
+            .first_section_image {
+                display: none;
+            }
+
+            /* Section */
+            .section_page_block {
+                margin-bottom: 200px;
+            }
+
+            /* First section */
+            .discover_nfts_item_text {
+                width: 100%;
+            }
+
+            .discover_nfts_item_photo {
+                width: 0;
+            }
+
+            .discover_nfts_item_text {
+                align-items: center;
+            }
+
+            .discover_nfts_title {
+                width: 80%;
+            }
+
+            .discover_nfts_text {
+                width: 80%;
+            }
+
+            /* Second section */
+            .analytics_photo_item {
+                width: 45%;
+            }
+
+            .analytics_text_item {
+                width: 55%;
+            }
+
+            /* Third section */
+            .get_our_up_text_item {
+                width: 55%;
+            }
+
+            .get_our_up_photo_item {
+                width: 45%;
+            }
+
+            .Access_photo_item {
+                width: 42%;
+            }
+
+            .Access_text_item{
+                width: 58%;
+            }
+
+            /* Fifth section */
+            .media_margin {
+                margin-top: 400px;
+            }
+        }
+
+        @media (max-width: 780px) {
+
+            /* images */
+            .section_image {
+                width: 0;
+                height: 0;
+            }
+
+            .logos_image {
+                width: 130px;
+            }
+            
+            .logos_image_mit {
+                width: 50px;
+            }
+
+            .logos_image_forbes {
+                width: 90px;
+            }
+
+            /*Section*/
+            .media_margin {
+                margin-top: 800px;
+            }
+
+            /*First section*/
+            .discover_nfts_title {
+                width: 100%;
+            }
+
+            .discover_nfts_text {
+                width: 100%;
+            }
+
+            /* Second section */
+            .analytics_photo_item {
+                width: 0;
+            }
+
+            .analytics_text_item {
+                width: 100%;
+            }
+
+            /* Third section */
+            .get_our_up_text_item {
+                width: 100%;
+            }
+            
+            .get_our_up_photo_item {
+                width: 0%;
+            }
+
+            .Access_photo_item {
+                width: 0%;
+            }
+
+            .Access_text_item{
+                width: 100%;
+            }
+
+            /* Fourght section */
+            .testemonials_block {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 580px) {
+
+            /* images */
+            .logos_image {
+                width: 110px;
+            }
+            
+            .logos_image_mit {
+                width: 40px;
+            }
+
+            .logos_image_forbes {
+                width: 70px;
+            }
+
+            .logos {
+                height: 80px;
+            }
+
+            /* Buttons */
+            .section_button {
+                width: 260px;
+                height: 62px;
+            }
+
+            /* Section */
+            .section_page_block {
+                margin-bottom: 150px;
+            }
+
+            /* Header */
+            .nav_link {
+                margin: 0 5px;
+            }
+
+            /* First section */
+            .discover_nfts_button {
+                width: 210px;
+                height: 60px;
+            }
+
+            .discover_button_div {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            /* Fourth section */
+            .testimonials_title {
+                height: 20px;
+            }
+
+            /* Fifth section */
+            .big_thing_square_title {
+                width: 320px;
+            }
+
+        }
+
+        @media (max-width: 375px) {
+
+            /* images */
+            .logos_image {
+                width: 90px;
+            }
+            
+            .logos_image_mit {
+                width: 20px;
+            }
+
+            .logos_image_forbes {
+                width: 50px;
+            }
+
+            .logos {
+                height: 60px;
+            }
+            
+
+        }
+
+        @media (max-width: 320px) {
+
         }
 
     </style>
@@ -40,7 +281,7 @@
 
         <span class="green_circle"></span>
 
-        <!-- First page -->
+        <!-- First section -->
         <section class="section_page_block">
             
             <header class="header" id="home">
@@ -91,7 +332,7 @@
                                 Our platform utilizes cutting-edge security measures and advanced encryption technology to protect your assets and ensure a safe trading environment.
                             </p>
 
-                            <div>
+                            <div class="discover_button_div">
                             
                                 <button class="block_button discover_nfts_button subtitle_block" type="submit" onclick="document.location='https://opensea.io'">buy nfts</button>
                                 <button class="block_button discover_nfts_button subtitle_block" type="submit" onclick="document.location='https://opensea.io'">sell nfts</button>
@@ -101,7 +342,7 @@
                         </div>
 
                         <div class="discover_nfts_item_photo">
-                            <img src="image/Objects/PersonalComputer.png" alt="PersonalComputer">
+                            <img class="section_image first_section_image" src="image/Objects/PersonalComputer.png" alt="PersonalComputer">
                         </div>
 
                     </div>
@@ -112,7 +353,7 @@
 
         </section>
 
-        <!-- Second page -->
+        <!-- Second section -->
         <section class="section_page_block" id="pricing"> <!-- Analytics -->
 
             <div class="container">
@@ -123,10 +364,10 @@
 
                     <div class="logos">
 
-                        <img src="image/Logos/TechCrunch.png" alt="TechCrunch">
-                        <img src="image/Logos/FastCompany.png" alt="FastCompany">
-                        <img src="image/Logos/Mit.png" alt="Mit">
-                        <img src="image/Logos/Forbes.png" alt="Forbes">
+                        <img class="logos_image" src="image/Logos/TechCrunch.png" alt="TechCrunch">
+                        <img class="logos_image" src="image/Logos/FastCompany.png" alt="FastCompany">
+                        <img class="logos_image logos_image_mit" src="image/Logos/Mit.png" alt="Mit">
+                        <img class="logos_image logos_image_forbes" src="image/Logos/Forbes.png" alt="Forbes">
 
                     </div>
 
@@ -135,7 +376,7 @@
                 <div class="page_block_organizer">
                 
                     <div class="analytics_photo_item">                       
-                        <img src="image/Objects/Massages.png" alt="Massages">  
+                        <img class="section_image" src="image/Objects/Massages.png" alt="Massages" >  
                     </div>
 
                     <div class="analytics_text_item">
@@ -155,7 +396,7 @@
 
                         <div class="block_button_reg">
                         
-                            <button class="block_button analytics_button subtitle_block" type="submit" onclick="document.location='price.html'">View our Prising</button>
+                            <button class="block_button section_button subtitle_block" type="submit" onclick="document.location='price.html'">View our Prising</button>
                             
                         </div>
 
@@ -167,7 +408,7 @@
 
         </section>
 
-        <!-- Third page -->
+        <!-- Third section -->
         <section class="section_page_block" id="download"> <!-- Get our app section -->
 
             <div class="container">
@@ -191,14 +432,14 @@
 
                             <div class="block_button_reg">
                             
-                                <button class="block_button get_our_up_button subtitle_block" type="submit" onclick="document.location='https://apps.apple.com/us/app/apple-store/id375380948'">download on ios</button>
+                                <button class="block_button section_button subtitle_block" type="submit" onclick="document.location='https://apps.apple.com/us/app/apple-store/id375380948'">download on ios</button>
                                 
                             </div>
 
                         </div>
 
                         <div class="get_our_up_photo_item">                       
-                            <img src="image/Objects/Phone.png" alt="Phone">  
+                            <img class="section_image" src="image/Objects/Phone.png" alt="Phone">  
                         </div>
 
                     </div>
@@ -214,7 +455,7 @@
                     <div class="page_block_organizer">
                     
                         <div class="Access_photo_item">                       
-                            <img src="image/Objects/Organiser.png" alt="Organiser">  
+                            <img class="section_image" src="image/Objects/Organiser.png" alt="Organiser">  
                         </div>
         
                         <div class="Access_text_item">
@@ -234,7 +475,7 @@
 
                             <div class="block_button_reg">
                             
-                                <button class="block_button Access_button subtitle_block" type="submit" onclick="document.location='Regform.html'">Get started</button>
+                                <button class="block_button section_button subtitle_block" type="submit" onclick="document.location='Regform.html'">Get started</button>
                                 
                             </div>
 
@@ -246,7 +487,7 @@
 
         </section>
 
-        <!-- Fourght page -->
+        <!-- Fourght section -->
         <section class="section_page_block" id="reviwes"> <!-- Testimonials -->
 
             <div class="container">
@@ -324,8 +565,8 @@
 
         </section>
 
-        <!-- Fifth page -->
-        <section class="section_page_block"> <!-- Be a part of thenext big thing square-->
+        <!-- Fifth section -->
+        <section class="section_page_block media_margin"> <!-- Be a part of thenext big thing square-->
 
             <div class="container">
 
@@ -381,7 +622,7 @@
                         <a class="footer_href text_block" href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank">Email</a>
                         <a class="footer_href text_block" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
                         <a class="footer_href text_block" href="https://www.instagram.com" target="_blank">Instagram</a>
-                        <a class="footer_href text_block" href="https://twitter.com/?lang=uk" target="_blank">Twitter</a>
+                        <a class="footer_href text_block" href="https://twitter.com/settings/account/personalization" target="_blank">Twitter</a>
                     </div>
 
                     <div class="footer_column email_column">
