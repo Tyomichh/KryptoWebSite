@@ -122,6 +122,7 @@ p {
 
 /* Section */
 .section_page_block {
+    margin-top: 160px;
     margin-bottom: 260px;
 }
 
