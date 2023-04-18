@@ -1,6 +1,6 @@
 $(function () {
     var header = $(".header"),
-        introH = $("#NFTs").innerHeight(),
+        introH = $("#pricing").innerHeight(),
         scrollOffset = $(window).scrollTop();
 
 
