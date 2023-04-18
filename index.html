@@ -190,6 +190,38 @@
 
         @media (max-width: 580px) {
 
+            /* Header */
+            .header_nav {
+                display: none;
+                width: 100%;
+                position: absolute;
+                backdrop-filter: blur(150px);
+                border-radius: 15px;
+                top: 150%;
+                right: 0;
+            }
+
+            .header_nav.active {
+                display: block;
+            }
+
+            .nav_link {
+                display: block;
+                margin: 0;
+                padding: 8px 20px;
+            }
+
+            .nav_link:after {
+                top: 90%;
+                width: 50px;
+                left: 4%;
+            }
+
+            /* NAV TOGGLE */
+            .nav-toggle {
+                display: block;
+            }
+
             /* images */
             .logos_image {
                 width: 110px;
@@ -291,8 +323,7 @@
         <span class="green_circle"></span>
 
         <!-- First section -->
-        <section class="section_page_block">
-            
+        
             <header class="header" id="home">
 
                 <div class="container">
@@ -303,7 +334,7 @@
 
                             <img src="image/Logos/SyteLogo.png" alt="SyteLogo">
 
-                            <div class="syteLogo_title">
+                            <div class="syteLogo_title" data-scroll="#NFTs">
                                 Krypto
                             </div>
 
@@ -318,13 +349,17 @@
                             
                         </nav>
 
+                        <button class="nav-toggle" id="nav_toggle" type="button">
+                            <span class="nav-toggle-item">Menu</span>
+                        </button>
+
                     </div>
 
                 </div>
 
             </header>
 
-            <div class="page_block" id="NFTs">
+            <div class="section_page_block page_block" id="NFTs">
 
                 <div class="container">
 
@@ -359,8 +394,6 @@
                 </div>
 
             </div>
-
-        </section>
 
         <!-- Second section -->
         <section class="section_page_block" id="pricing"> <!-- Analytics -->

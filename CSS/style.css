@@ -141,10 +141,21 @@ p {
     margin-bottom: 160px;
 }
 
+.header.fixed {
+    padding: 10px 0;
+    backdrop-filter: blur(150px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translate3d(0, 0, 0);
+}
+
 .header_iner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header_logo {
@@ -208,8 +219,75 @@ p {
     color: #ffffff;
 }
 
-/* discover_nfts block */
+/* Header NavToggle */
+.nav-toggle {
+    width: 30px;
+    display: none;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    z-index: 1;
+}
 
+.nav-toggle:focus {
+    outline: 0;
+}
+
+.nav-toggle-item {
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: background .1s linear;
+}
+
+.nav-toggle-item::before,
+.nav-toggle-item::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: transform .2s linear;
+}
+
+.nav-toggle-item::before {
+    top: -8px;
+}
+
+.nav-toggle-item::after {
+    bottom: -8px;
+}
+
+.nav-toggle.active .nav-toggle-item {
+    background: none;
+}
+
+.nav-toggle.active .nav-toggle-item::before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate(-2px);
+}
+
+.nav-toggle.active .nav-toggle-item::after {
+    transform-origin: left top;
+    transform: rotate(-45deg) translate(-5px);
+}
+
+/* discover_nfts block */
 .discover_nfts_item_text {
     display: flex;
     width: 55%;
@@ -1136,7 +1214,7 @@ p {
 
     /* RegForm page */
     .header {
-        width: 98%;
+        width: 100%;
     }
 
 }
