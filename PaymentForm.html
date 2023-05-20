@@ -66,7 +66,7 @@
 
         </header>
 
-        <form class="payment_form">
+        <form class="syteForm payment_form" action="" autocomplete="off">
             
             <div class="payment_left_decoration"></div>
 
@@ -86,36 +86,38 @@
                 <div class="checkout_information">
 
                     <div class="input_group">
-                        <label for="name">Name on card</label>
-                        <input type="text" id="name" placeholder="Enter name">
+                        <label for="name">Name on card</label><span class="labelValid Inline"> *</span>
+                        <input class="validInput" type="text" id="name" placeholder="Enter name">
                     </div>
 
                     <div class="input_group">
-                        <label for="number">Card number</label>
-                        <input type="text" id="number" placeholder="...">
+                        <label for="number">Card number</label><span class="labelValid Inline"> *</span>
+                        <input class="validInput" type="text" id="number" placeholder="...">
                     </div>
 
                     <div class="horizontal_grid">
 
                         <div class="input_group date_group">
-                            <label for="date">Expiration date</label>
-                            <input type="text" id="date" placeholder="12/27">
+                            <label for="date">Expiration date</label><span class="labelValid Inline"> *</span>
+                            <input class="validInput dateInp" type="text" id="date" placeholder="12/27">
                         </div>
 
                         <div class="input_group CVV_group">
-                            <label for="cvv">CVV</label>
-                            <input type="number" id="cvv" placeholder="CVV">
+                            <label for="cvv">CVV</label><span class="labelValid Inline"> *</span>
+                            <input class="validInput" type="number" id="cvv" placeholder="CVV">
                         </div>
 
                     </div>
 
                 </div>
 
-                <button class="payment_button button--checkout">Checkout</button>
+                <button class="payment_button button--checkout" type="submit">Send</button>
 
         </form>
         
     </div>
+    
+    <script src="JS/valid.js"></script>
 
 </body>
 

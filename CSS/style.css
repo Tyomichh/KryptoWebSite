@@ -24,7 +24,6 @@ p {
 }
 
 /* Circles */
-
 .purple_circle {
     position: absolute;
     max-width: 677px;
@@ -124,6 +123,18 @@ p {
 .section_page_block {
     margin-top: 160px;
     margin-bottom: 260px;
+}
+
+/* Form validation */
+.labelValid {
+    display: none;
+    color: #8D8DDA;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.labelValid.Inline {
+    display: inline;
 }
 
 
@@ -890,8 +901,7 @@ p {
     color: #242424;
 }
 
-.checkout_information,
-.input_group {
+.checkout_information{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -919,12 +929,17 @@ p {
     line-height: 30px;
 }
 
+.input_group .dateInp{
+    max-width: 90px;
+    width:100%;
+}
+
 .input_group input:focus {
     background-color: transparent;
 }
 
 .date_group {
-    max-width: 100px;
+    max-width: 105px;
 }
 
 .CVV_group {

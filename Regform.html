@@ -66,7 +66,7 @@
     
             </header>
     
-            <form class="reg_form" action="#" autocomplete="off" method='post' enctype="multipart/form-data">
+            <form class="syteForm reg_form" action="" autocomplete="off">
     
                 <div class="form_left_decoration"></div>
     
@@ -80,22 +80,22 @@
                         <h3 class="text_color">Fill out the form</h3>
     
                         <div class="input_block">
-                            <label for="username" class="text_color">Username</label>
-                            <input type="text" name="username" placeholder="Enter name">
+                            <label for="username" class="text_color">Username</label><span class="labelValid Inline"> *</span>
+                            <input class="validInput" type="text" name="username" placeholder="Enter name">
                         </div>
                         <div class="input_block">
-                            <label for="useremail" class="text_color">Email</label>
-                            <input type="email" name="useremail" placeholder="sumonumira@gmail.com">
+                            <label for="useremail" class="text_color">Email</label><span class="labelValid Inline"> *</span>
+                            <input class="validInput" type="email" name="useremail" placeholder="sumonumira@gmail.com">
                         </div>
                         
                         <div class="input_block">
-                            <label for="userpass" class="text_color">Password</label>
-                            <input type="password" name="userpass" placeholder="...">
+                            <label for="userpass" class="text_color">Password</label><span class="labelValid Inline"> *</span>
+                            <input class="validInput" type="password" name="userpass" placeholder="...">
                         </div>
     
                         <div class="input_block">
-                            <label for="confirmuserpass" class="text_color">Confirm assword</label>
-                            <input type="password" name="confirmuserpass" placeholder="...">
+                            <label for="confirmuserpass" class="text_color">Confirm assword</label><span class="labelValid Inline"> *</span>
+                            <input class="validInput" type="password" name="confirmuserpass" placeholder="...">
                         </div>
     
                         <div class="reg_form_button_block">
@@ -108,6 +108,8 @@
             </form>
 
         </div>
+
+        <script src="JS/valid.js"></script>
 
 </body>
 
